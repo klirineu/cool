@@ -1,0 +1,56 @@
+.container-log {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+   transform: translate(-50%, -50%);
+  height: 400px;
+  width: 550px;
+  box-shadow: 5px 5px rgba(0,0,0,0.2), -5px -5px rgba(0,0,0,0.2);
+}
+
+.container-log div {
+  margin: 90px 0;
+  text-align: center;
+}
+
+.container-log div h2 {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin-top: -40px;
+  margin-bottom: 60px;
+}
+
+.container-log div input {
+  width: 80%;
+  height: 45px;
+  border: none;
+  border-radius: 50px;
+  padding-left: 20px;
+  background-color: rgba(0,0,0,0.4);
+  position: relative;
+  color: white;
+  font-size: 16px;
+}
+
+.container-log div button {
+  width: 80%;
+  height: 45px;
+  border: none;
+  border-radius: 50px;
+  padding-left: 20px;
+  background-color: black;
+  background-image: linear-gradient(10deg, #0a6ed3 30%, rgb(0, 44, 89) 100% );
+  position: relative;
+  color: rgba(0,0,0,0.9);
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.container-log div button:hover {
+  transition: 0.2s;
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+  cursor: pointer;
+}
