@@ -1,4 +1,16 @@
 {
+  "author": {
+    "name": "Next Level Agency",
+    "email": "AgenciaProximoNivel@gmail.com",
+    "url": "https://nextlevelagency.com.br/"
+  },
+  "homepage": "./",
+  "main": "public/electron.js",
+  "build": {
+    "appId": "cool.electron",
+    "productName": "Cool Cadastro de Usuário",
+    "copyright": "Copyright © 2021 Next Level Agency"
+  },
   "name": "reactron.js",
   "version": "0.1.0",
   "private": true,
@@ -9,6 +21,7 @@
     "axios": "^0.21.1",
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
+    "electron-builder": "^22.10.5",
     "electron-is-dev": "^2.0.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
@@ -19,14 +32,17 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "sequelize": "^6.6.2",
+    "socket.io-client": "^4.0.0",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build-react": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron public/electron.js\" \"nodemon src/Sequelize/server.js\""
+    "dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron public/electron.js\"",
+    "build-electron": "electron-builder -wl",
+    "build": "yarn build-react && yarn build-electron"
   },
   "eslintConfig": {
     "extends": [

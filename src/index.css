@@ -11,10 +11,15 @@ body,
   width: 100%;
   height: 100vh;
   background-color: #000;
+  font-family: 'Bebas Neue', cursive;
 }
 
 .App {
   height: 100vh;
+  width: 100vw;
+  min-width: 1200px;
+  min-height: 500px;
   background-size: cover;
-  background-image: linear-gradient(0deg, #002d59 0%, rgba(0, 45, 89, 0) 100% );
+  background-image: linear-gradient(10deg, #0a6ed3 30%, rgb(0, 44, 89) 100% );
 }
+

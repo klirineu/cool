@@ -14,7 +14,7 @@ function creatWindow() {
     }
   })
 
-  win.loadURL(isDev ? 'http://localhost:3000' : `file://${path.resolve(__dirname, '..', 'build', 'index.html')}`, )
+  win.loadURL(isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, '../build/index.html')}`, )
 
   win.on('closed', () => {
     win = null
@@ -25,6 +25,7 @@ app.on('ready', creatWindow)
 
 app.on('window-all-closed', () => {
   if(process.platform !== 'darwin') {
+    localStorage.clear()
     app.quit()
   }
 })

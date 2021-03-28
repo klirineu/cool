@@ -1,8 +1,133 @@
 .container-dashboard {
+  height: 100vh;
+  width: 100vw;
+  
+  color: white;
+  background-image: linear-gradient(10deg, #0a6ed3 30%, rgb(0, 44, 89) 100% );
+}
+
+.container-dashboard header {
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.container-dashboard header strong {
+  margin-left: 20px;
+  font-size: 20px;
+  font-family: 'PT Mono', monospace;
+  border-bottom: 0.5px solid white;
+}
+
+.container-dashboard header strong:hover {
+  cursor: pointer;
+}
+
+.container-dashboard header img {
+  position: absolute;
+  margin-top: -25px;
+  right: 30px;
+  width: 50px;
+  color: white;
+}
+
+.perfil_user {
+  position: absolute;
+  margin-top: 10px;
+  top: 20px;
+  right: 100px;
+}
+
+
+
+#funcionarios {
+  display: block;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
-   transform: translate(-50%, -50%);
-   color: white;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#funcionarios h1 {
+  text-align: center;
+  margin-top: -28px;
+  margin-bottom: 5px;
+}
+
+#funcionarios ul {
+  text-align: center;
+  min-width: 1500px;
+  list-style: none;
+  background-color: rgba(0,0,0,0.4);
+  width: 1800px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#funcionarios ul li {
+  margin-bottom: 20px;
+}
+#funcionarios ul li strong {
+  margin-right: 10px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+#cadastro-funcionario {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+#cadastro-funcionario div {
+  padding: 50px;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.4);
+  width: 500px;
+}
+
+#cadastro-funcionario div strong {
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+#cadastro-funcionario div input {
+  color: white;
+  border: none;
+  border-radius: 50px;
+  height: 30px;
+  width: 230px;
+  background-color: rgba(0,0,0,0.4);
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+#cadastro-funcionario div button {
+  width: 80%;
+  height: 45px;
+  border: none;
+  border-radius: 50px;
+  background-color: black;
+  background-image: linear-gradient(10deg, #0959aa 30%, rgb(3, 76, 150) 100% );
+  color: rgba(0,0,0,0.9);
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+#cadastro-funcionario div button:hover {
+  transition: 0.4s;
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+  cursor: pointer;
+  box-shadow: 5px 5px rgba(0,0,0,0.4);
 }
